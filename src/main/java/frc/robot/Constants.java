@@ -93,30 +93,30 @@ public class Constants {
      * This is to make offset slightly more accurate and easier to measure.
      */
     public static final SwerveModuleConstants MOD_0_Constants = new SwerveModuleConstants(
-      1,
-      2,
       3,
+      4,
+      5,
       203.115234
     );
 
     public static final SwerveModuleConstants MOD_1_Constants = new SwerveModuleConstants(
-      4,
-      5,
       6,
+      7,
+      8,
       191.074219  
     );
 
     public static final SwerveModuleConstants MOD_2_Constants = new SwerveModuleConstants(
-      7,
-      8,
       9,
+      10,
+      11,
       203.906250
     );
 
     public static final SwerveModuleConstants MOD_3_Constants = new SwerveModuleConstants(
-      10,
-      11,
       12,
+      13,
+      14,
       155.214844
     );
   }

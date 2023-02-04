@@ -2,7 +2,7 @@ package frc.robot.subsystems;
 
 import java.util.function.DoubleSupplier;
 
-import com.kauailabs.navx.frc.AHRS;
+// import com.kauailabs.navx.frc.AHRS;
 
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
@@ -22,10 +22,10 @@ public class Swerve extends SubsystemBase {
 
   private final SwerveDriveOdometry swerveOdometry;
 
-  private final AHRS gyro;
+  // private final AHRS gyro;
 
   public Swerve() {
-    gyro = new AHRS();
+    // gyro = new AHRS();
     zeroGyro();
 
     modules = new SwerveModule[] {
@@ -101,7 +101,8 @@ public class Swerve extends SubsystemBase {
   }
 
   public Rotation2d getYaw() {
-    return Rotation2d.fromDegrees(-gyro.getYaw());
+    // return Rotation2d.fromDegrees(-gyro.getYaw());
+    return new Rotation2d();
   }
 
   public Command zeroGyroCommand() {
@@ -109,7 +110,7 @@ public class Swerve extends SubsystemBase {
   }
 
   private void zeroGyro() {
-    gyro.zeroYaw();
+    // gyro.zeroYaw();
   }
 
   public Pose2d getPose() {
